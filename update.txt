@@ -1,0 +1,61 @@
+Description
+• Unsaved changes
+
+As a data scientist,
+I want to research the discrepancies between the BigQuery framework rate validation output and the new Cal Service rate validation output,
+so that we can understand why claims that were correct in the framework output are incorrect in the Cal Service output and identify logic gaps or integration issues.
+
+Background Summary:
+We identified 62 claims that were correct under the BigQuery framework but incorrect under the Cal Service logic. These discrepancies need to be analyzed to determine root causes and whether adjustments are required in the Cal Service implementation. See attached data file on target claims.
+
+Buckets of Incorrect Claims:
+No Rate Retrieved: 24 out of 62 claims
+
+Column: Row_Num:
+285, 321, 336, 339, 367, 430, 455, 566, 590, 603, 609, 625, 660, 673, 856, 960, 1044, 1066, 1088, 1104, 1110, 1134, 1209, 1234
+
+Rate Retrieved but No Payment Method Retrieved: 17 out of 62 claim.                                                
+
+Column: Row_Num:
+254, 263, 280, 363, 543, 621, 692, 732, 774, 861, 864, 1010, 1047, 1084, 1103, 1133, 1147
+
+Rate Retrieved but Incorrect: 21 out of 62 claims                                                                              
+
+Column: Row_Num:
+291, 327, 416, 431, 478, 554, 601, 700, 723, 728, 742, 757, 821, 823, 855, 857, 891, 1023, 1074, 1128, 1176
+
+ 
+
+Data file:
+cal_service_discrepancies_20251007.xlsx 
+
+Acceptance Criteria:
+✅ Data Review
+
+Validate the 62 claims across both outputs (BigQuery vs. Cal Service).
+
+Confirm which logic paths were applied in each system.
+
+✅ Root Cause Analysis
+
+Investigate why rates were not retrieved or payment methods were missing.
+
+Analyze incorrect rate selection logic for the 21 claims in the third bucket.
+
+✅ Comparison Summary
+
+Document differences in logic between BigQuery and Cal Service.
+
+Highlight patterns or common factors in each bucket (e.g., POS, contract type, hierarchy).
+
+✅ Recommendations
+
+Propose fixes or enhancements to Cal Service logic to address identified gaps.
+
+Share findings with engineering and product teams for alignment.
+
+Change Implemented
+
+
+Add text
+
