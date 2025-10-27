@@ -1,0 +1,2081 @@
+Date: Mon, 27 Oct 2025 15:10:32 +0000 (UTC)
+Message-ID: <1528555807.11.1761577832744@d5f87a0bf7a8>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_10_1122311559.1761577832744"
+
+------=_Part_10_1122311559.1761577832744
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>GKE Shared Cluster Details</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font: var(--ds-font-body-small, Arial, Helvetica, FreeSans, sans-se=
+rif);
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: var(--ds-text, #000);
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        page-break-after: avoid;
+    }
+
+    pre {
+        font: var(--ds-font-code, Monaco, "Courier New", monospace);
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>GKE Shared Cluster Details</h1>
+    <div class=3D"Section1">
+        <div class=3D"table-wrap">
+<table data-table-width=3D"989" data-layout=3D"center" data-local-id=3D"0e4=
+73ab6-1c56-4ad6-81ff-fd564bb3331b" data-table-display-mode=3D"fixed" class=
+=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 95.0px;">
+<col style=3D"width: 106.0px;">
+<col style=3D"width: 104.0px;">
+<col style=3D"width: 112.0px;">
+<col style=3D"width: 234.0px;">
+<col style=3D"width: 201.0px;">
+<col style=3D"width: 403.0px;">
+<col style=3D"width: 166.0px;">
+<col style=3D"width: 159.0px;">
+<col style=3D"width: 159.0px;">
+<col style=3D"width: 158.0px;">
+<col style=3D"width: 155.0px;">
+<col style=3D"width: 178.0px;">
+<col style=3D"width: 106.0px;">
+<col style=3D"width: 177.0px;">
+<col style=3D"width: 415.0px;">
+<col style=3D"width: 312.0px;">
+<col style=3D"width: 48.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th data-highlight-colour=3D"#f4f5f7" class=3D"confluenceTh">
+<p><strong>LOB</strong></p></th>
+<th data-highlight-colour=3D"#f4f5f7" class=3D"confluenceTh">
+<p><strong>Env</strong></p></th>
+<th data-highlight-colour=3D"#f4f5f7" class=3D"confluenceTh">
+<p><strong>Category</strong></p></th>
+<th data-highlight-colour=3D"#f4f5f7" class=3D"confluenceTh">
+<p><strong>Environment</strong></p></th>
+<th data-highlight-colour=3D"#f4f5f7" class=3D"confluenceTh">
+<p><strong>GKE Project Name</strong></p></th>
+<th data-highlight-colour=3D"#f4f5f7" class=3D"confluenceTh">
+<p><strong>GKE Cluster Name</strong></p></th>
+<th data-highlight-colour=3D"#f4f5f7" class=3D"confluenceTh">
+<p><strong>Subnet</strong></p></th>
+<th data-highlight-colour=3D"#f4f5f7" class=3D"confluenceTh">
+<p><strong>Subnet CIDR</strong></p></th>
+<th data-highlight-colour=3D"#f4f5f7" class=3D"confluenceTh">
+<p><strong>Pod CIDR</strong></p></th>
+<th data-highlight-colour=3D"#f4f5f7" class=3D"confluenceTh">
+<p><strong>Service CIDR</strong></p></th>
+<th data-highlight-colour=3D"#f4f5f7" class=3D"confluenceTh">
+<p><strong>Service IP Count</strong></p></th>
+<th data-highlight-colour=3D"#f4f5f7" class=3D"confluenceTh">
+<p><strong>Istio Primary IP</strong></p></th>
+<th data-highlight-colour=3D"#f4f5f7" class=3D"confluenceTh">
+<p><strong>Istio Secondary IP</strong></p></th>
+<th data-highlight-colour=3D"#f4f5f7" class=3D"confluenceTh">
+<p><strong>ArgoURL</strong></p></th>
+<th data-highlight-colour=3D"#f4f5f7" class=3D"confluenceTh">
+<p><strong>Default Endpoint</strong></p></th>
+<th data-highlight-colour=3D"#f4f5f7" class=3D"confluenceTh">
+<p><strong>Cluster Specific Repo</strong></p></th>
+<th data-highlight-colour=3D"#f4f5f7" class=3D"confluenceTh">
+<p><strong>Manifest Repo</strong></p></th>
+<th data-highlight-colour=3D"#f4f5f7" class=3D"confluenceTh">
+<p></p></th>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p>EDML</p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p>NonProd</p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p>Restrict</p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/kubernetes/clusters/details/=
+us-east4/edml-restricted-gke/details?inv=3D1&amp;invt=3DAb1iDA&amp;project=
+=3Dedp-dev-restrict-edml-gke" class=3D"external-link" rel=3D"nofollow">Dev<=
+/a></p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/kubernetes/list/overview?inv=
+=3D1&amp;invt=3DAb5vtA&amp;project=3Dedp-dev-restrict-edml-gke" class=3D"ex=
+ternal-link" rel=3D"nofollow">edp-dev-restrict-edml-gke</a></p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/kubernetes/clusters/details/=
+us-east4/edml-restricted-gke?inv=3D1&amp;invt=3DAb1sCg&amp;project=3Dedp-de=
+v-restrict-edml-gke" class=3D"external-link" rel=3D"nofollow">edml-restrict=
+ed-gke</a></p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/networking/subnetworks/detai=
+ls/us-east4/sn-aa-use4-edp-dev-restrict-edml-gke-01?project=3Dinsurance-vpc=
+&amp;inv=3D1&amp;invt=3DAb1mAg" class=3D"external-link" rel=3D"nofollow">sn=
+-aa-use4-edp-dev-restrict-edml-gke-01</a></p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p>10.112.152.0/25</p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p>100.65.168.0/21</p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p>100.65.176.0/24</p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p>256</p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p>10.112.152.2</p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p>10.112.152.3</p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p><a href=3D"http://internal-argocd-non-prod.edml-restricted-gke.cvshealth=
+.com/" class=3D"external-link" rel=3D"nofollow">ArgoCD</a></p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p><a href=3D"http://internal-non-prod.edml-restricted-gke.cvshealth.com" c=
+lass=3D"external-link" rel=3D"nofollow">AppURL</a></p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p><a href=3D"https://github.com/cvs-health-source-code/cluster-specific/tr=
+ee/master/edp-dev-restrict-edml-gke_edml-restricted-gke" class=3D"external-=
+link" rel=3D"nofollow">edp-dev-restrict-edml-gke_edml-restricted-gke</a></p=
+></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p><a href=3D"https://github.com/cvs-health-source-code/edml_restricted_gke=
+-gke_manifests" class=3D"external-link" rel=3D"nofollow">edml_restricted_gk=
+e-gke_manifests</a></p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p>EDML</p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p>NonProd</p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p>UnRestrict</p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/kubernetes/list/overview?inv=
+=3D1&amp;invt=3DAb3ZXw&amp;project=3Dedp-dev-edml-gke" class=3D"external-li=
+nk" rel=3D"nofollow">Dev</a></p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/kubernetes/list/overview?inv=
+=3D1&amp;invt=3DAb5vtA&amp;project=3Dedp-dev-edml-gke" class=3D"external-li=
+nk" rel=3D"nofollow">edp-dev-edml-gke</a></p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/kubernetes/clusters/details/=
+us-east4/dev-edml-gke?inv=3D1&amp;invt=3DAb3ZXw&amp;project=3Dedp-dev-edml-=
+gke" class=3D"external-link" rel=3D"nofollow"><u>dev-edml-gke</u></a></p></=
+td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/networking/subnetworks/detai=
+ls/us-east4/sn-aa-use4-edp-dev-edml-gke?project=3Dinsurance-vpc&amp;inv=3D1=
+&amp;invt=3DAb3ZXw" class=3D"external-link" rel=3D"nofollow">sn-aa-use4-edp=
+-dev-edml-gke</a></p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p>10.112.114.128/25</p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p>100.73.128.0/19</p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p>100.72.24.0/21</p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p>2048</p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p>10.112.114.130</p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p>10.112.114.131</p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p><a href=3D"http://internal-argocd-non-prod.dev-edml-gke.cvshealth.com" c=
+lass=3D"external-link" rel=3D"nofollow">ArgoCD</a></p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p><a href=3D"http://internal-non-prod.dev-edml-gke.cvshealth.com" class=3D=
+"external-link" rel=3D"nofollow">AppURL</a></p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p><a href=3D"https://github.com/cvs-health-source-code/cluster-specific/tr=
+ee/master/edp-dev-edml-gke_dev-edml-gke" class=3D"external-link" rel=3D"nof=
+ollow">edp-dev-edml-gke_dev-edml-gke</a></p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p><a href=3D"https://github.com/cvs-health-source-code/dev_edml_gke-gke_ma=
+nifests" class=3D"external-link" rel=3D"nofollow"><u>dev_edml_gke</u>-gke_m=
+anifests</a></p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p>EDML</p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p>NonProd</p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p>Restrict</p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p>QA</p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p></p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p></p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p></p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p></p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p></p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p></p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p></p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p></p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p></p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p>ArgoCD</p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p>AppURL</p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p></p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p></p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p>EDML</p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p>NonProd</p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p>UnRestrict</p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p>QA</p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p><u>edp-qa-edml-gke</u></p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p>qa-edml-gke</p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p>sn-aa-use4-edp-qa-edml-gke</p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p>10.112.115.0/25&nbsp;</p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p>100.73.160.0/19</p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p>100.72.160.0/21</p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p>2048</p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p>10.112.115.2</p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p>10.112.115.3</p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p>ArgoCD</p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p>AppURL</p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p><a href=3D"https://github.com/cvs-health-source-code/cluster-specific/tr=
+ee/master/edp-qa-edml-gke_qa-edml-gke" class=3D"external-link" rel=3D"nofol=
+low">edp-qa-edml-gke_qa-edml-gke</a></p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p><a href=3D"https://github.com/cvs-health-source-code/qa_edml_gke-gke_man=
+ifests" class=3D"external-link" rel=3D"nofollow">qa_edml_gke-gke_manifests<=
+/a></p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p>EDML</p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p>Prod</p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p>Restrict</p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/kubernetes/list/overview?inv=
+=3D1&amp;invt=3DAb21-A&amp;project=3Dedp-pdev-restrict-edml-gke" class=3D"e=
+xternal-link" rel=3D"nofollow">PDev</a></p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/kubernetes/list/overview?inv=
+=3D1&amp;invt=3DAb5vtA&amp;project=3Dedp-pdev-restrict-edml-gke" class=3D"e=
+xternal-link" rel=3D"nofollow">edp-pdev-restrict-edml-gke</a></p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/kubernetes/clusters/details/=
+us-east4/pdev-rst-edml-gke?inv=3D1&amp;invt=3DAb3ZXw&amp;project=3Dedp-pdev=
+-restrict-edml-gke" class=3D"external-link" rel=3D"nofollow"><u>pdev-rst-ed=
+ml-gke</u></a></p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/networking/subnetworks/detai=
+ls/us-east4/sn-aa-use4-edp-pdev-restrict-edml-gke?project=3Dinsurance-vpc&a=
+mp;inv=3D1&amp;invt=3DAb3ZXw" class=3D"external-link" rel=3D"nofollow">sn-a=
+a-use4-edp-pdev-restrict-edml-gke</a></p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p>10.112.113.128/25</p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p>100.72.128.0/19</p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p>100.71.224.0/21</p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p>2048</p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p>10.112.113.131</p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p>10.112.113.132</p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p><a href=3D"http://internal-argocd-prod.pdev-rst-edml-gke.cvshealth.com" =
+class=3D"external-link" rel=3D"nofollow">ArgoCD</a></p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p><a href=3D"http://internal-prod.pdev-rst-edml-gke.cvshealth.com" class=
+=3D"external-link" rel=3D"nofollow">AppURL</a></p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p><a href=3D"https://github.com/cvs-health-source-code/cluster-specific/tr=
+ee/master/edp-pdev-restrict-edml-gke_pdev-rst-edml-gke" class=3D"external-l=
+ink" rel=3D"nofollow">edp-pdev-restrict-edml-gke_pdev-rst-edml-gke</a></p><=
+/td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p><a href=3D"https://github.com/cvs-health-source-code/pdev_rst_edml_gke-g=
+ke_manifests" class=3D"external-link" rel=3D"nofollow"><u>pdev_rst_edml_gke=
+</u>-gke_manifests</a></p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p>EDML</p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p>Prod</p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p>UnRestrict</p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/kubernetes/list/overview?inv=
+=3D1&amp;invt=3DAb21-A&amp;project=3Dedp-pdev-edml-gke" class=3D"external-l=
+ink" rel=3D"nofollow">PDev</a></p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/kubernetes/list/overview?inv=
+=3D1&amp;invt=3DAb5vtA&amp;project=3Dedp-pdev-edml-gke" class=3D"external-l=
+ink" rel=3D"nofollow">edp-pdev-edml-gke</a></p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/kubernetes/clusters/details/=
+us-east4/pdev-edml-gke?inv=3D1&amp;invt=3DAb3ZXw&amp;project=3Dedp-pdev-edm=
+l-gke" class=3D"external-link" rel=3D"nofollow"><u>pdev-edml-gke</u></a></p=
+></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/networking/subnetworks/detai=
+ls/us-east4/sn-aa-use4-edp-pdev-edml-gke?project=3Dinsurance-vpc&amp;inv=3D=
+1&amp;invt=3DAb3ZXw" class=3D"external-link" rel=3D"nofollow">sn-aa-use4-ed=
+p-pdev-edml-gke</a></p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p>10.112.115.128/25</p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p>100.73.192.0/19</p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p>100.72.168.0/21</p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p>2048</p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p>10.112.115.131</p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p>10.112.115.132</p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p><a href=3D"https://internal-argocd-prod.pdev-edml-gke.cvshealth.com/logi=
+n?return_url=3Dhttps%3A%2F%2Finternal-argocd-prod.pdev-edml-gke.cvshealth.c=
+om%2Fapplications" class=3D"external-link" rel=3D"nofollow">ArgoCD</a></p><=
+/td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p><a href=3D"http://internal-prod.pdev-edml-gke.cvshealth.com" class=3D"ex=
+ternal-link" rel=3D"nofollow">AppURL</a></p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p><a href=3D"https://github.com/cvs-health-source-code/cluster-specific/tr=
+ee/master/edp-pdev-edml-gke_pdev-edml-gke" class=3D"external-link" rel=3D"n=
+ofollow">edp-pdev-edml-gke_pdev-edml-gke</a></p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p><a href=3D"https://github.com/cvs-health-source-code/pdev_edml_gke-gke_m=
+anifests" class=3D"external-link" rel=3D"nofollow"><u>pdev_edml_gke</u>-gke=
+_manifests</a></p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p>EDML</p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p>Prod</p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p>Restrict</p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/kubernetes/list/overview?inv=
+=3D1&amp;invt=3DAb21-A&amp;project=3Dedp-prod-restrict-edml-gke" class=3D"e=
+xternal-link" rel=3D"nofollow">Prod</a></p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/kubernetes/list/overview?inv=
+=3D1&amp;invt=3DAb5vtA&amp;project=3Dedp-prod-restrict-edml-gke" class=3D"e=
+xternal-link" rel=3D"nofollow">edp-prod-restrict-edml-gke</a></p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/kubernetes/clusters/details/=
+us-east4/prod-rst-edml-gke?inv=3D1&amp;invt=3DAb3ZXw&amp;project=3Dedp-prod=
+-restrict-edml-gke" class=3D"external-link" rel=3D"nofollow"><u>prod-rst-ed=
+ml-gke</u></a></p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/networking/subnetworks/detai=
+ls/us-east4/sn-aa-use4-edp-prod-restrict-edml-gke?project=3Dinsurance-vpc&a=
+mp;inv=3D1&amp;invt=3DAb3ZXw" class=3D"external-link" rel=3D"nofollow">sn-a=
+a-use4-edp-prod-restrict-edml-gke</a></p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p>10.112.114.0/25</p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p>100.73.96.0/19</p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p>100.71.248.0/21</p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p>2048</p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p>10.112.114.3</p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p>10.112.114.4</p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p><a href=3D"http://internal-argocd-prod.prod-rst-edml-gke.cvshealth.com/l=
+ogin?return_url=3Dhttps%3A%2F%2Finternal-argocd-prod.prod-rst-edml-gke.cvsh=
+ealth.com%2Fapplications" class=3D"external-link" rel=3D"nofollow">ArgoCD</=
+a></p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p><a href=3D"http://internal-prod.prod-rst-edml-gke.cvshealth.com" class=
+=3D"external-link" rel=3D"nofollow">AppURL</a></p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p><a href=3D"https://github.com/cvs-health-source-code/cluster-specific/tr=
+ee/master/edp-prod-restrict-edml-gke_prod-rst-edml-gke" class=3D"external-l=
+ink" rel=3D"nofollow">edp-prod-restrict-edml-gke_prod-rst-edml-gke</a></p><=
+/td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p><a href=3D"https://github.com/cvs-health-source-code/prod_rst_edml_gke-g=
+ke_manifests" class=3D"external-link" rel=3D"nofollow"><u>prod_rst_edml_gke=
+</u>-gke_manifests</a></p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p>EDML</p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p>Prod</p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p>UnRestrict</p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/kubernetes/list/overview?inv=
+=3D1&amp;invt=3DAb21-A&amp;project=3Dedp-prod-edml-gke" class=3D"external-l=
+ink" rel=3D"nofollow">Prod</a></p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/kubernetes/list/overview?inv=
+=3D1&amp;invt=3DAb5vtA&amp;project=3Dedp-prod-edml-gke" class=3D"external-l=
+ink" rel=3D"nofollow">edp-prod-edml-gke</a></p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/kubernetes/clusters/details/=
+us-east4/prod-edml-gke?inv=3D1&amp;invt=3DAb3ZXw&amp;project=3Dedp-prod-edm=
+l-gke" class=3D"external-link" rel=3D"nofollow"><u>prod-edml-gke</u></a></p=
+></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/networking/subnetworks/detai=
+ls/us-east4/sn-aa-use4-edp-prod-edml-gke?project=3Dinsurance-vpc&amp;inv=3D=
+1&amp;invt=3DAb3ZXw" class=3D"external-link" rel=3D"nofollow">sn-aa-use4-ed=
+p-prod-edml-gke</a></p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p>10.112.116.0/25</p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p>100.73.224.0/19</p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p>100.72.176.0/21</p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p>2048</p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p>10.112.116.3</p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p>10.112.116.4</p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p><a href=3D"http://internal-argocd-prod.prod-edml-gke.cvshealth.com/login=
+?return_url=3Dhttps%3A%2F%2Finternal-argocd-prod.prod-edml-gke.cvshealth.co=
+m%2Fapplications" class=3D"external-link" rel=3D"nofollow">ArgoCD</a></p></=
+td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p><a href=3D"http://internal-prod.prod-edml-gke.cvshealth.com" class=3D"ex=
+ternal-link" rel=3D"nofollow">AppURL</a></p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p><a href=3D"https://github.com/cvs-health-source-code/cluster-specific/tr=
+ee/master/edp-prod-edml-gke_prod-edml-gke" class=3D"external-link" rel=3D"n=
+ofollow">edp-prod-edml-gke_prod-edml-gke</a></p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p><a href=3D"https://github.com/cvs-health-source-code/prod_edml_gke-gke_m=
+anifests" class=3D"external-link" rel=3D"nofollow"><u>prod_edml_gke</u>-gke=
+_manifests</a></p></td>
+<td data-highlight-colour=3D"#deebff" class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p>HCB</p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p>NonProd</p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p>Restrict</p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/kubernetes/clusters/details/=
+us-east4/dev-restrict-hcb-gke?inv=3D1&amp;invt=3DAb1sHg&amp;project=3Dedp-d=
+ev-restrict-hcb-gke" class=3D"external-link" rel=3D"nofollow">Dev</a></p></=
+td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/kubernetes/list/overview?inv=
+=3D1&amp;invt=3DAb5vtA&amp;project=3Dedp-dev-restrict-hcb-gke" class=3D"ext=
+ernal-link" rel=3D"nofollow">edp-dev-restrict-hcb-gke</a></p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/kubernetes/clusters/details/=
+us-east4/dev-restrict-hcb-gke?inv=3D1&amp;invt=3DAb1sHg&amp;project=3Dedp-d=
+ev-restrict-hcb-gke" class=3D"external-link" rel=3D"nofollow">dev-restrict-=
+hcb-gke</a></p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/networking/subnetworks/detai=
+ls/us-east4/sn-aa-use4-edp-dev-restrict-hcb-gke?project=3Dinsurance-vpc&amp=
+;inv=3D1&amp;invt=3DAb3ZfA" class=3D"external-link" rel=3D"nofollow">sn-aa-=
+use4-edp-dev-restrict-hcb-gke</a></p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p>10.112.102.128/25</p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p>100.69.96.0/19</p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p>100.69.80.0/21</p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p>2048</p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p>10.112.102.130</p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p>10.112.102.131</p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p><a href=3D"http://internal-argocd-non-prod.dev-restrict-hcb-gke.cvshealt=
+h.com/" class=3D"external-link" rel=3D"nofollow">ArgoCD</a></p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p><a href=3D"http://internal-non-prod.dev-restrict-hcb-gke.cvshealth.com" =
+class=3D"external-link" rel=3D"nofollow">AppURL</a></p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p><a href=3D"https://github.com/cvs-health-source-code/cluster-specific/tr=
+ee/master/edp-dev-restrict-hcb-gke_dev-restrict-hcb-gke" class=3D"external-=
+link" rel=3D"nofollow">edp-dev-restrict-hcb-gke_dev-restrict-hcb-gke</a></p=
+></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p><a href=3D"https://github.com/cvs-health-source-code/dev_restrict_hcb_gk=
+e-gke_manifests" class=3D"external-link" rel=3D"nofollow">dev_restrict_hcb_=
+gke-gke_manifests</a></p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p>HCB</p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p>NonProd</p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p>UnRestrict</p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/kubernetes/clusters/details/=
+us-east4/dev-hcb-gke?inv=3D1&amp;invt=3DAb1sHg&amp;project=3Dedp-dev-hcb-gk=
+e" class=3D"external-link" rel=3D"nofollow">Dev</a></p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/kubernetes/list/overview?inv=
+=3D1&amp;invt=3DAb5vtA&amp;project=3Dedp-dev-hcb-gke" class=3D"external-lin=
+k" rel=3D"nofollow">edp-dev-hcb-gke</a></p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/kubernetes/clusters/details/=
+us-east4/dev-hcb-gke?inv=3D1&amp;invt=3DAb1sHg&amp;project=3Dedp-dev-hcb-gk=
+e" class=3D"external-link" rel=3D"nofollow">dev-hcb-gke</a></p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/networking/subnetworks/detai=
+ls/us-east4/sn-aa-use4-edp-dev-hcb-gke?project=3Dinsurance-vpc&amp;inv=3D1&=
+amp;invt=3DAb1sHg" class=3D"external-link" rel=3D"nofollow">sn-aa-use4-edp-=
+dev-hcb-gke</a></p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p>10.112.104.0/25</p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p>100.69.128.0/19</p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p>100.69.88.0/21</p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p>2048</p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p>10.112.104.2</p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p>10.112.104.3</p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p><a href=3D"http://internal-argocd-non-prod.dev-hcb-gke.cvshealth.com/" c=
+lass=3D"external-link" rel=3D"nofollow">ArgoCD</a></p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p><a href=3D"http://internal-non-prod.dev-hcb-gke.cvshealth.com" class=3D"=
+external-link" rel=3D"nofollow">AppURL</a></p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p><a href=3D"https://github.com/cvs-health-source-code/cluster-specific/tr=
+ee/master/edp-dev-hcb-gke_dev-hcb-gke" class=3D"external-link" rel=3D"nofol=
+low">edp-dev-hcb-gke_dev-hcb-gke</a></p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p><a href=3D"https://github.com/cvs-health-source-code/dev_hcb_gke-gke_man=
+ifests" class=3D"external-link" rel=3D"nofollow">dev_hcb_gke-gke_manifests<=
+/a></p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p>HCB</p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p>NonProd</p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p>Restrict</p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/kubernetes/clusters/details/=
+us-east4/qa-restrict-hcb-gke?inv=3D1&amp;invt=3DAb1sHg&amp;project=3Dedp-qa=
+-restrict-hcb-gke" class=3D"external-link" rel=3D"nofollow">QA</a></p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/kubernetes/list/overview?inv=
+=3D1&amp;invt=3DAb5vtA&amp;project=3Dedp-qa-restrict-hcb-gke" class=3D"exte=
+rnal-link" rel=3D"nofollow">edp-qa-restrict-hcb-gke</a></p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/kubernetes/clusters/details/=
+us-east4/qa-restrict-hcb-gke?inv=3D1&amp;invt=3DAb1sHg&amp;project=3Dedp-qa=
+-restrict-hcb-gke" class=3D"external-link" rel=3D"nofollow">qa-restrict-hcb=
+-gke</a></p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/networking/subnetworks/detai=
+ls/us-east4/sn-aa-use4-edp-qa-restrict-hcb-gke?project=3Dinsurance-vpc&amp;=
+inv=3D1&amp;invt=3DAb3ZfA" class=3D"external-link" rel=3D"nofollow">sn-aa-u=
+se4-edp-qa-restrict-hcb-gke</a></p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p>10.112.105.0/25</p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p>100.70.32.0/19</p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p>100.69.240.0/21</p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p>2048</p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p>10.112.105.2</p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p>10.112.105.3</p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p><a href=3D"http://internal-argocd-non-prod.qa-restrict-hcb-gke.cvshealth=
+.com/" class=3D"external-link" rel=3D"nofollow">ArgoCD</a></p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p><a href=3D"http://internal-non-prod.qa-restrict-hcb-gke.cvshealth.com" c=
+lass=3D"external-link" rel=3D"nofollow">AppURL</a></p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p><a href=3D"https://github.com/cvs-health-source-code/cluster-specific/tr=
+ee/master/edp-qa-restrict-hcb-gke_qa-restrict-hcb-gke" class=3D"external-li=
+nk" rel=3D"nofollow">edp-qa-restrict-hcb-gke_qa-restrict-hcb-gke</a></p></t=
+d>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p><a href=3D"https://github.com/cvs-health-source-code/qa_restrict_hcb_gke=
+-gke_manifests" class=3D"external-link" rel=3D"nofollow">qa_restrict_hcb_gk=
+e-gke_manifests</a></p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p>HCB</p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p>NonProd</p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p>UnRestrict</p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/kubernetes/list/overview?pro=
+ject=3Dedp-qa-hcb-gke" class=3D"external-link" rel=3D"nofollow">QA</a></p><=
+/td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/kubernetes/list/overview?pro=
+ject=3Dedp-qa-hcb-gke" class=3D"external-link" rel=3D"nofollow">edp-qa-hcb-=
+gke</a></p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/kubernetes/clusters/details/=
+us-east4/qa-hcb-gke/overview?project=3Dedp-qa-hcb-gke" class=3D"external-li=
+nk" rel=3D"nofollow">qa-hcb-gke</a></p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/networking/subnetworks/detai=
+ls/us-east4/sn-aa-use4-edp-qa-hcb-gke?project=3Dinsurance-vpc" class=3D"ext=
+ernal-link" rel=3D"nofollow">sn-aa-use4-edp-qa-hcb-gke</a></p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p>10.112.107.128/25</p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p>100.70.160.0/19</p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p>100.70.144.0/21</p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p>2048</p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p>10.112.107.130</p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p>10.112.107.131</p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p><a href=3D"http://internal-argocd-non-prod.qa-hcb-gke.cvshealth.com" cla=
+ss=3D"external-link" rel=3D"nofollow">ArgoCD</a></p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p><a href=3D"http://internal-non-prod.qa-hcb-gke.cvshealth.com" class=3D"e=
+xternal-link" rel=3D"nofollow">AppURL</a></p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p><a href=3D"https://github.com/cvs-health-source-code/cluster-specific/tr=
+ee/master/edp-qa-hcb-gke_qa-hcb-gke" class=3D"external-link" rel=3D"nofollo=
+w">edp-qa-hcb-gke_qa-hcb-gke</a></p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p><a href=3D"https://github.com/cvs-health-source-code/qa_hcb_gke-gke_mani=
+fests" class=3D"external-link" rel=3D"nofollow">qa_hcb_gke-gke_manifests</a=
+></p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p>HCB</p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p>Prod</p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p>Restrict</p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/kubernetes/list/overview?inv=
+=3D1&amp;invt=3DAb21-A&amp;project=3Dedp-pdev-restrict-hcb-gke" class=3D"ex=
+ternal-link" rel=3D"nofollow">PDev</a></p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/kubernetes/list/overview?inv=
+=3D1&amp;invt=3DAb5vtA&amp;project=3Dedp-pdev-restrict-hcb-gke" class=3D"ex=
+ternal-link" rel=3D"nofollow">edp-pdev-restrict-hcb-gke</a></p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/kubernetes/clusters/details/=
+us-east4/pdev-rst-hcb-gke/details?inv=3D1&amp;invt=3DAb21-A&amp;project=3De=
+dp-pdev-restrict-hcb-gke" class=3D"external-link" rel=3D"nofollow">pdev-rst=
+-hcb-gke</a></p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/networking/subnetworks/detai=
+ls/us-east4/sn-aa-use4-edp-pdev-restrict-hcb-gke?project=3Dinsurance-vpc&am=
+p;inv=3D1&amp;invt=3DAb3ZeA" class=3D"external-link" rel=3D"nofollow">sn-aa=
+-use4-edp-pdev-restrict-hcb-gke</a></p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p>10.112.104.128/25</p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p>100.70.0.0/19</p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p>100.69.232.0/21</p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p>2048</p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p>10.112.104.131</p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p>10.112.104.132</p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p><a href=3D"http://internal-argocd-prod.pdev-rst-hcb-gke.cvshealth.com/lo=
+gin?return_url=3Dhttps%3A%2F%2Finternal-argocd-prod.pdev-rst-hcb-gke.cvshea=
+lth.com%2Fapplications" class=3D"external-link" rel=3D"nofollow">ArgoCD</a>=
+</p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p><a href=3D"http://internal-prod.pdev-rst-hcb-gke.cvshealth.com" class=3D=
+"external-link" rel=3D"nofollow">AppURL</a></p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p><a href=3D"https://github.com/cvs-health-source-code/cluster-specific/tr=
+ee/master/edp-pdev-restrict-hcb-gke_pdev-rst-hcb-gke" class=3D"external-lin=
+k" rel=3D"nofollow">edp-pdev-restrict-hcb-gke_pdev-rst-hcb-gke</a></p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p><a href=3D"https://github.com/cvs-health-source-code/pdev_rst_hcb_gke-gk=
+e_manifests" class=3D"external-link" rel=3D"nofollow">pdev_rst_hcb_gke-gke_=
+manifests</a></p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p>HCB</p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p>Prod</p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p>UnRestrict</p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/kubernetes/list/overview?inv=
+=3D1&amp;invt=3DAb21-A&amp;project=3Dedp-pdev-hcb-gke" class=3D"external-li=
+nk" rel=3D"nofollow">PDev</a></p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/kubernetes/list/overview?inv=
+=3D1&amp;invt=3DAb5vtA&amp;project=3Dedp-pdev-hcb-gke" class=3D"external-li=
+nk" rel=3D"nofollow">edp-pdev-hcb-gke</a></p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/kubernetes/clusters/details/=
+us-east4/pdev-hcb-gke/details?inv=3D1&amp;invt=3DAb21-A&amp;project=3Dedp-p=
+dev-hcb-gke" class=3D"external-link" rel=3D"nofollow">pdev-hcb-gke</a></p><=
+/td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/networking/subnetworks/detai=
+ls/us-east4/sn-aa-use4-edp-pdev-hcb-gke?project=3Dinsurance-vpc&amp;inv=3D1=
+&amp;invt=3DAb3ZeA" class=3D"external-link" rel=3D"nofollow">sn-aa-use4-edp=
+-pdev-hcb-gke</a></p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p>10.112.107.0/25</p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p>100.70.96.0/19</p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p>100.70.128.0/21</p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p>2048</p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p>10.112.107.3</p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p>10.112.107.4</p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p><a href=3D"http://internal-argocd-prod.pdev-hcb-gke.cvshealth.com/login?=
+return_url=3Dhttps%3A%2F%2Finternal-argocd-prod.pdev-hcb-gke.cvshealth.com%=
+2Fapplications" class=3D"external-link" rel=3D"nofollow">ArgoCD</a></p></td=
+>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p><a href=3D"http://internal-prod.pdev-hcb-gke.cvshealth.com" class=3D"ext=
+ernal-link" rel=3D"nofollow">AppURL</a></p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p><a href=3D"https://github.com/cvs-health-source-code/cluster-specific/tr=
+ee/master/edp-pdev-hcb-gke_pdev-hcb-gke" class=3D"external-link" rel=3D"nof=
+ollow">edp-pdev-hcb-gke_pdev-hcb-gke</a></p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p><a href=3D"https://github.com/cvs-health-source-code/pdev_hcb_gke-gke_ma=
+nifests" class=3D"external-link" rel=3D"nofollow">pdev_hcb_gke-gke_manifest=
+s</a></p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p>HCB</p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p>Prod</p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p>Restrict</p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/kubernetes/list/overview?inv=
+=3D1&amp;invt=3DAb21-A&amp;project=3Dedp-prod-restrict-hcb-gke" class=3D"ex=
+ternal-link" rel=3D"nofollow">Prod</a></p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/kubernetes/list/overview?inv=
+=3D1&amp;invt=3DAb5vtA&amp;project=3Dedp-prod-restrict-hcb-gke" class=3D"ex=
+ternal-link" rel=3D"nofollow">edp-prod-restrict-hcb-gke</a></p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/kubernetes/clusters/details/=
+us-east4/prod-rst-hcb-gke/details?inv=3D1&amp;invt=3DAb21-A&amp;project=3De=
+dp-prod-restrict-hcb-gke" class=3D"external-link" rel=3D"nofollow">prod-rst=
+-hcb-gke</a></p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/networking/subnetworks/detai=
+ls/us-east4/sn-aa-use4-edp-prod-restrict-hcb-gke?project=3Dinsurance-vpc&am=
+p;inv=3D1&amp;invt=3DAb3Zdw" class=3D"external-link" rel=3D"nofollow">sn-aa=
+-use4-edp-prod-restrict-hcb-gke</a></p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p>10.112.105.128/25</p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p>100.70.64.0/19</p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p>100.69.248.0/21</p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p>2048</p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p>10.112.105.131</p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p>10.112.105.132</p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p><a href=3D"http://internal-argocd-prod.prod-rst-hcb-gke.cvshealth.com/lo=
+gin?return_url=3Dhttps%3A%2F%2Finternal-argocd-prod.prod-rst-hcb-gke.cvshea=
+lth.com%2Fapplications" class=3D"external-link" rel=3D"nofollow">ArgoCD</a>=
+</p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p><a href=3D"http://internal-prod.prod-rst-hcb-gke.cvshealth.com" class=3D=
+"external-link" rel=3D"nofollow">AppURL</a></p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p><a href=3D"https://github.com/cvs-health-source-code/cluster-specific/tr=
+ee/master/edp-prod-restrict-hcb-gke_prod-rst-hcb-gke" class=3D"external-lin=
+k" rel=3D"nofollow">edp-prod-restrict-hcb-gke_prod-rst-hcb-gke</a></p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p><a href=3D"https://github.com/cvs-health-source-code/prod_rst_hcb_gke-gk=
+e_manifests" class=3D"external-link" rel=3D"nofollow">prod_rst_hcb_gke-gke_=
+manifests</a></p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p>HCB</p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p>Prod</p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p>UnRestrict</p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/kubernetes/list/overview?inv=
+=3D1&amp;invt=3DAb21-A&amp;project=3Dedp-prod-hcb-gke" class=3D"external-li=
+nk" rel=3D"nofollow">Prod</a></p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/kubernetes/list/overview?inv=
+=3D1&amp;invt=3DAb5vtA&amp;project=3Dedp-prod-hcb-gke" class=3D"external-li=
+nk" rel=3D"nofollow">edp-prod-hcb-gke</a></p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/kubernetes/clusters/details/=
+us-east4/prod-hcb-gke/details?inv=3D1&amp;invt=3DAb21-A&amp;project=3Dedp-p=
+rod-hcb-gke" class=3D"external-link" rel=3D"nofollow">prod-hcb-gke</a></p><=
+/td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/networking/subnetworks/detai=
+ls/us-east4/sn-aa-use4-edp-prod-hcb-gke?project=3Dinsurance-vpc&amp;inv=3D1=
+&amp;invt=3DAb3ZeA" class=3D"external-link" rel=3D"nofollow">sn-aa-use4-edp=
+-prod-hcb-gke</a></p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p>10.112.108.0/25</p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p>100.70.192.0/19</p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p>100.70.152.0/21</p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p>2048</p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p>10.112.108.3</p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p>10.112.108.4</p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p><a href=3D"http://internal-argocd-prod.prod-hcb-gke.cvshealth.com/login?=
+return_url=3Dhttps%3A%2F%2Finternal-argocd-prod.prod-hcb-gke.cvshealth.com%=
+2Fapplications" class=3D"external-link" rel=3D"nofollow">ArgoCD</a></p></td=
+>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p><a href=3D"http://internal-prod.prod-hcb-gke.cvshealth.com" class=3D"ext=
+ernal-link" rel=3D"nofollow">AppURL</a></p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p><a href=3D"https://github.com/cvs-health-source-code/cluster-specific/tr=
+ee/master/edp-prod-hcb-gke_prod-hcb-gke" class=3D"external-link" rel=3D"nof=
+ollow">edp-prod-hcb-gke_prod-hcb-gke</a></p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p><a href=3D"https://github.com/cvs-health-source-code/prod_hcb_gke-gke_ma=
+nifests" class=3D"external-link" rel=3D"nofollow">prod_hcb_gke-gke_manifest=
+s</a></p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p>HCB</p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p>Prod</p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p>UnRestrict</p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p>PQA</p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p>edp-pqa-hcb-gke</p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p>pqa-hcb-gke</p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p>sn-aa-use4-edp-pqa-hcb-gke-01</p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p>10.112.165.128/25</p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p>100.74.160.0/19</p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p>100.74.144.0/21</p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p>2048</p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p>10.112.165.131</p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p>10.112.165.132</p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p>ArgoCD</p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p>APPURL</p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p>edp-pqa-hcb-gke_pqa-hcb-gke</p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p>pqa_hcb_gke-gke_manifests</p></td>
+<td data-highlight-colour=3D"#e6fcff" class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p>PBM</p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p>NonProd</p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p>Restrict</p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/kubernetes/list/overview?inv=
+=3D1&amp;invt=3DAb23Ag&amp;project=3Dedp-dev-restrict-pbm-gke" class=3D"ext=
+ernal-link" rel=3D"nofollow">Dev</a></p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/kubernetes/list/overview?inv=
+=3D1&amp;invt=3DAb5vtA&amp;project=3Dedp-dev-restrict-pbm-gke" class=3D"ext=
+ernal-link" rel=3D"nofollow">edp-dev-restrict-pbm-gke</a></p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/kubernetes/clusters/details/=
+us-east4/dev-restrict-pbm-gke/details?inv=3D1&amp;invt=3DAb23Ag&amp;project=
+=3Dedp-dev-restrict-pbm-gke" class=3D"external-link" rel=3D"nofollow">dev-r=
+estrict-pbm-gke</a></p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/networking/subnetworks/detai=
+ls/us-east4/sn-aa-use4-edp-dev-restrict-pbm-gke?project=3Dinsurance-vpc&amp=
+;inv=3D1&amp;invt=3DAb3ZeQ" class=3D"external-link" rel=3D"nofollow">sn-aa-=
+use4-edp-dev-restrict-pbm-gke</a></p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p>10.112.99.0/25</p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p>100.68.64.0/19</p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p>100.69.64.0/21</p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p>2048</p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p>10.112.99.2</p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p>10.112.99.3</p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p><a href=3D"http://internal-argocd-non-prod.dev-restrict-pbm-gke.cvshealt=
+h.com/login?return_url=3Dhttps%3A%2F%2Finternal-argocd-non-prod.dev-restric=
+t-pbm-gke.cvshealth.com%2Fapplications" class=3D"external-link" rel=3D"nofo=
+llow">ArgoCD</a></p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p><a href=3D"http://internal-non-prod.dev-restrict-pbm-gke.cvshealth.com" =
+class=3D"external-link" rel=3D"nofollow">AppURL</a></p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p><a href=3D"https://github.com/cvs-health-source-code/cluster-specific/tr=
+ee/master/edp-dev-restrict-pbm-gke_dev-restrict-pbm-gke" class=3D"external-=
+link" rel=3D"nofollow">edp-dev-restrict-pbm-gke_dev-restrict-pbm-gke</a></p=
+></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p><a href=3D"https://github.com/cvs-health-source-code/dev_restrict_pbm_gk=
+e-gke_manifests" class=3D"external-link" rel=3D"nofollow">dev_restrict_pbm_=
+gke-gke_manifests</a></p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p>PBM</p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p>NonProd</p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p>UnRestrict</p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/kubernetes/list/overview?inv=
+=3D1&amp;invt=3DAb23Ag&amp;project=3Dedp-dev-pbm-gke" class=3D"external-lin=
+k" rel=3D"nofollow">Dev</a></p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/kubernetes/list/overview?inv=
+=3D1&amp;invt=3DAb5vtA&amp;project=3Dedp-dev-pbm-gke" class=3D"external-lin=
+k" rel=3D"nofollow">edp-dev-pbm-gke</a></p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/kubernetes/clusters/details/=
+us-east4/dev-pbm-gke/details?inv=3D1&amp;invt=3DAb23Ag&amp;project=3Dedp-de=
+v-pbm-gke" class=3D"external-link" rel=3D"nofollow">dev-pbm-gke</a></p></td=
+>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/networking/subnetworks/detai=
+ls/us-east4/sn-aa-use4-edp-dev-pbm-gke?project=3Dinsurance-vpc&amp;inv=3D1&=
+amp;invt=3DAb3ZeQ" class=3D"external-link" rel=3D"nofollow">sn-aa-use4-edp-=
+dev-pbm-gke</a></p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p>10.112.100.0/25</p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p>100.68.128.0/19</p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p>100.69.168.0/21</p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p>2048</p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p>10.112.100.2</p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p>10.112.100.3</p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p><a href=3D"http://internal-argocd-non-prod.dev-pbm-gke.cvshealth.com/log=
+in?return_url=3Dhttps%3A%2F%2Finternal-argocd-non-prod.dev-pbm-gke.cvshealt=
+h.com%2Fapplications" class=3D"external-link" rel=3D"nofollow">ArgoCD</a></=
+p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p><a href=3D"http://internal-non-prod.dev-pbm-gke.cvshealth.com" class=3D"=
+external-link" rel=3D"nofollow">AppURL</a></p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p><a href=3D"https://github.com/cvs-health-source-code/cluster-specific/tr=
+ee/master/edp-dev-pbm-gke_dev-pbm-gke" class=3D"external-link" rel=3D"nofol=
+low">edp-dev-pbm-gke_dev-pbm-gke</a></p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p><a href=3D"https://github.com/cvs-health-source-code/dev_pbm_gke-gke_man=
+ifests" class=3D"external-link" rel=3D"nofollow">dev_pbm_gke-gke_manifests<=
+/a></p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p>PBM</p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p>NonProd</p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p>Restrict</p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/kubernetes/list/overview?pro=
+ject=3Dedp-qa-restrict-pbm-gke" class=3D"external-link" rel=3D"nofollow">QA=
+</a></p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/kubernetes/list/overview?pro=
+ject=3Dedp-qa-restrict-pbm-gke" class=3D"external-link" rel=3D"nofollow">ed=
+p-qa-restrict-pbm-gke</a></p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/kubernetes/clusters/details/=
+us-east4/qa-restrict-pbm-gke?project=3Dedp-qa-restrict-pbm-gke" class=3D"ex=
+ternal-link" rel=3D"nofollow"><u>qa-restrict-pbm-gke</u></a></p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/networking/subnetworks/detai=
+ls/us-east4/sn-aa-use4-edp-qa-restrict-pbm-gke?project=3Dinsurance-vpc" cla=
+ss=3D"external-link" rel=3D"nofollow">sn-aa-use4-edp-qa-restrict-pbm-gke</a=
+></p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p>10.112.99.128/25</p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p>100.68.96.0/19</p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p>100.66.184.0/21</p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p>2048</p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p>10.112.99.130</p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p>10.112.99.131</p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p><a href=3D"http://internal-argocd-non-prod.qa-restrict-pbm-gke.cvshealth=
+.com" class=3D"external-link" rel=3D"nofollow">ArgoCD</a></p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p><a href=3D"http://internal-non-prod.qa-restrict-pbm-gke.cvshealth.com" c=
+lass=3D"external-link" rel=3D"nofollow">AppURL</a></p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p><a href=3D"https://github.com/cvs-health-source-code/cluster-specific/tr=
+ee/master/edp-qa-restrict-pbm-gke_qa-restrict-pbm-gke" class=3D"external-li=
+nk" rel=3D"nofollow">edp-qa-restrict-pbm-gke_qa-restrict-pbm-gke</a></p></t=
+d>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p><a href=3D"https://github.com/cvs-health-source-code/qa_restrict_pbm_gke=
+-gke_manifests" class=3D"external-link" rel=3D"nofollow">qa_restrict_pbm_gk=
+e-gke_manifests</a></p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p>PBM</p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p>NonProd</p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p>UnRestrict</p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/kubernetes/list/overview?pro=
+ject=3Dedp-qa-pbm-gke" class=3D"external-link" rel=3D"nofollow">QA</a></p><=
+/td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/kubernetes/list/overview?pro=
+ject=3Dedp-qa-pbm-gke" class=3D"external-link" rel=3D"nofollow">edp-qa-pbm-=
+gke</a></p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/kubernetes/clusters/details/=
+us-east4/qa-pbm-gke/overview?project=3Dedp-qa-pbm-gke" class=3D"external-li=
+nk" rel=3D"nofollow">qa-pbm-gke</a></p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/networking/subnetworks/detai=
+ls/us-east4/sn-aa-use4-edp-qa-pbm-gke?project=3Dinsurance-vpc" class=3D"ext=
+ernal-link" rel=3D"nofollow">sn-aa-use4-edp-qa-pbm-gke</a></p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p>10.112.100.128/25</p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p>100.68.160.0/19</p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p>100.67.16.0/21</p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p>2048</p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p>10.112.100.130</p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p>10.112.100.131</p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p><a href=3D"http://internal-argocd-non-prod.qa-pbm-gke.cvshealth.com" cla=
+ss=3D"external-link" rel=3D"nofollow">ArgoCD</a></p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p><a href=3D"http://internal-non-prod.qa-pbm-gke.cvshealth.com" class=3D"e=
+xternal-link" rel=3D"nofollow">AppURL</a></p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p><a href=3D"https://github.com/cvs-health-source-code/cluster-specific/tr=
+ee/master/edp-qa-pbm-gke_qa-pbm-gke" class=3D"external-link" rel=3D"nofollo=
+w">edp-qa-pbm-gke_qa-pbm-gke</a></p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p><a href=3D"https://github.com/cvs-health-source-code/qa_pbm_gke-gke_mani=
+fests" class=3D"external-link" rel=3D"nofollow">qa_pbm_gke-gke_manifests</a=
+></p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p>PBM</p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p>Prod</p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p>Restrict</p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/kubernetes/list/overview?inv=
+=3D1&amp;invt=3DAb23Ag&amp;project=3Dedp-pdev-restrict-pbm-gke" class=3D"ex=
+ternal-link" rel=3D"nofollow">PDev</a></p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/kubernetes/list/overview?inv=
+=3D1&amp;invt=3DAb5vtA&amp;project=3Dedp-pdev-restrict-pbm-gke" class=3D"ex=
+ternal-link" rel=3D"nofollow">edp-pdev-restrict-pbm-gke</a></p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/kubernetes/clusters/details/=
+us-east4/pdev-rst-pbm-gke/details?inv=3D1&amp;invt=3DAb23Ag&amp;project=3De=
+dp-pdev-restrict-pbm-gke" class=3D"external-link" rel=3D"nofollow">pdev-rst=
+-pbm-gke</a></p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/networking/subnetworks/detai=
+ls/us-east4/sn-aa-use4-edp-pdev-restrict-pbm-gke?project=3Dinsurance-vpc&am=
+p;inv=3D1&amp;invt=3DAb3ZeQ" class=3D"external-link" rel=3D"nofollow">sn-aa=
+-use4-edp-pdev-restrict-pbm-gke</a></p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p>10.112.101.0/25</p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p>100.68.192.0/19</p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p>100.69.72.0/21</p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p>2048</p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p>10.112.101.3</p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p>10.112.101.4</p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p><a href=3D"http://internal-argocd-prod.pdev-rst-pbm-gke.cvshealth.com/lo=
+gin?return_url=3Dhttps%3A%2F%2Finternal-argocd-prod.pdev-rst-pbm-gke.cvshea=
+lth.com%2Fapplications" class=3D"external-link" rel=3D"nofollow">ArgoCD</a>=
+</p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p><a href=3D"http://internal-prod.pdev-rst-pbm-gke.cvshealth.com" class=3D=
+"external-link" rel=3D"nofollow">AppURL</a></p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p><a href=3D"https://github.com/cvs-health-source-code/cluster-specific/tr=
+ee/master/edp-pdev-restrict-pbm-gke_pdev-rst-pbm-gke" class=3D"external-lin=
+k" rel=3D"nofollow">edp-pdev-restrict-pbm-gke_pdev-rst-pbm-gke</a></p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p><a href=3D"https://github.com/cvs-health-source-code/pdev_rst_pbm_gke-gk=
+e_manifests" class=3D"external-link" rel=3D"nofollow">pdev_rst_pbm_gke-gke_=
+manifests</a></p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p>PBM</p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p>Prod</p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p>UnRestrict</p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/kubernetes/list/overview?inv=
+=3D1&amp;invt=3DAb23Ag&amp;project=3Dedp-pdev-pbm-gke" class=3D"external-li=
+nk" rel=3D"nofollow">PDev</a></p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/kubernetes/list/overview?inv=
+=3D1&amp;invt=3DAb5vtA&amp;project=3Dedp-pdev-pbm-gke" class=3D"external-li=
+nk" rel=3D"nofollow">edp-pdev-pbm-gke</a></p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/kubernetes/clusters/details/=
+us-east4/pdev-pbm-gke/details?inv=3D1&amp;invt=3DAb23Ag&amp;project=3Dedp-p=
+dev-pbm-gke" class=3D"external-link" rel=3D"nofollow">pdev-pbm-gke</a></p><=
+/td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/networking/subnetworks/detai=
+ls/us-east4/sn-aa-use4-edp-pdev-pbm-gke?project=3Dinsurance-vpc&amp;inv=3D1=
+&amp;invt=3DAb3Zeg" class=3D"external-link" rel=3D"nofollow">sn-aa-use4-edp=
+-pdev-pbm-gke</a></p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p>10.112.101.128/25</p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p>100.68.224.0/19</p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p>100.67.48.0/21</p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p>2048</p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p>10.112.101.131</p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p>10.112.101.132</p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p><a href=3D"http://internal-argocd-prod.pdev-pbm-gke.cvshealth.com/login?=
+return_url=3Dhttps%3A%2F%2Finternal-argocd-prod.pdev-pbm-gke.cvshealth.com%=
+2Fapplications" class=3D"external-link" rel=3D"nofollow">ArgoCD</a></p></td=
+>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p><a href=3D"http://internal-prod.pdev-pbm-gke.cvshealth.com" class=3D"ext=
+ernal-link" rel=3D"nofollow">AppURL</a></p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p><a href=3D"https://github.com/cvs-health-source-code/cluster-specific/tr=
+ee/master/edp-pdev-pbm-gke_pdev-pbm-gke" class=3D"external-link" rel=3D"nof=
+ollow">edp-pdev-pbm-gke_pdev-pbm-gke</a></p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p><a href=3D"https://github.com/cvs-health-source-code/pdev_pbm_gke-gke_ma=
+nifests" class=3D"external-link" rel=3D"nofollow">pdev_pbm_gke-gke_manifest=
+s</a></p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p>PBM</p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p>Prod</p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p>Restrict</p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/kubernetes/list/overview?inv=
+=3D1&amp;invt=3DAb23Ag&amp;project=3Dedp-prod-restrict-pbm-gke" class=3D"ex=
+ternal-link" rel=3D"nofollow">Prod</a></p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/kubernetes/list/overview?inv=
+=3D1&amp;invt=3DAb5vtA&amp;project=3Dedp-prod-restrict-pbm-gke" class=3D"ex=
+ternal-link" rel=3D"nofollow">edp-prod-restrict-pbm-gke</a></p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/kubernetes/clusters/details/=
+us-east4/prod-rst-pbm-gke/details?inv=3D1&amp;invt=3DAb23Ag&amp;project=3De=
+dp-prod-restrict-pbm-gke" class=3D"external-link" rel=3D"nofollow">prod-rst=
+-pbm-gke</a></p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/networking/subnetworks/detai=
+ls/us-east4/sn-aa-use4-edp-prod-restrict-pbm-gke?project=3Dinsurance-vpc&am=
+p;inv=3D1&amp;invt=3DAb3ZeQ" class=3D"external-link" rel=3D"nofollow">sn-aa=
+-use4-edp-prod-restrict-pbm-gke</a></p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p>10.112.102.0/25</p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p>100.69.0.0/19</p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p>100.69.160.0/21</p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p>2048</p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p>10.112.102.3</p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p>10.112.102.4</p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p><a href=3D"http://internal-argocd-prod.prod-rst-pbm-gke.cvshealth.com/lo=
+gin?return_url=3Dhttps%3A%2F%2Finternal-argocd-prod.prod-rst-pbm-gke.cvshea=
+lth.com%2Fapplications" class=3D"external-link" rel=3D"nofollow">ArgoCD</a>=
+</p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p><a href=3D"http://internal-prod.prod-rst-pbm-gke.cvshealth.com" class=3D=
+"external-link" rel=3D"nofollow">AppURL</a></p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p><a href=3D"https://github.com/cvs-health-source-code/cluster-specific/tr=
+ee/master/edp-prod-restrict-pbm-gke_prod-rst-pbm-gke" class=3D"external-lin=
+k" rel=3D"nofollow">edp-prod-restrict-pbm-gke_prod-rst-pbm-gke</a></p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p><a href=3D"https://github.com/cvs-health-source-code/prod_rst_pbm_gke-gk=
+e_manifests" class=3D"external-link" rel=3D"nofollow">prod_rst_pbm_gke-gke_=
+manifests</a></p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p>PBM</p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p>Prod</p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p>UnRestrict</p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/kubernetes/list/overview?inv=
+=3D1&amp;invt=3DAb23Ag&amp;project=3Dedp-prod-pbm-gke" class=3D"external-li=
+nk" rel=3D"nofollow">Prod</a></p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/kubernetes/list/overview?inv=
+=3D1&amp;invt=3DAb5vtA&amp;project=3Dedp-prod-pbm-gke" class=3D"external-li=
+nk" rel=3D"nofollow">edp-prod-pbm-gke</a></p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/kubernetes/clusters/details/=
+us-east4/prod-pbm-gke/details?inv=3D1&amp;invt=3DAb23Ag&amp;project=3Dedp-p=
+rod-pbm-gke" class=3D"external-link" rel=3D"nofollow">prod-pbm-gke</a></p><=
+/td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/networking/subnetworks/detai=
+ls/us-east4/sn-aa-use4-edp-prod-pbm-gke?project=3Dinsurance-vpc&amp;inv=3D1=
+&amp;invt=3DAb3Zeg" class=3D"external-link" rel=3D"nofollow">sn-aa-use4-edp=
+-prod-pbm-gke</a></p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p>10.112.103.0/25</p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p>100.69.32.0/19</p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p>100.69.176.0/21</p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p>2048</p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p>10.112.103.3</p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p>10.112.103.4</p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p><a href=3D"http://internal-argocd-prod.prod-pbm-gke.cvshealth.com" class=
+=3D"external-link" rel=3D"nofollow">ArgoCD</a></p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p><a href=3D"http://internal-prod.prod-pbm-gke.cvshealth.com" class=3D"ext=
+ernal-link" rel=3D"nofollow">AppURL</a></p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p><a href=3D"https://github.com/cvs-health-source-code/cluster-specific/tr=
+ee/master/edp-prod-pbm-gke_prod-pbm-gke" class=3D"external-link" rel=3D"nof=
+ollow">edp-prod-pbm-gke_prod-pbm-gke</a></p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p><a href=3D"https://github.com/cvs-health-source-code/prod_pbm_gke-gke_ma=
+nifests" class=3D"external-link" rel=3D"nofollow">prod_pbm_gke-gke_manifest=
+s</a></p></td>
+<td data-highlight-colour=3D"#e3fcef" class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p>RET</p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p>NonProd</p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p>Restrict</p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/kubernetes/list/overview?inv=
+=3D1&amp;invt=3DAb23Tg&amp;project=3Dedp-dev-restrict-ret-gke" class=3D"ext=
+ernal-link" rel=3D"nofollow">Dev</a></p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/kubernetes/list/overview?inv=
+=3D1&amp;invt=3DAb5vtA&amp;project=3Dedp-dev-restrict-ret-gke" class=3D"ext=
+ernal-link" rel=3D"nofollow">edp-dev-restrict-ret-gke</a></p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/kubernetes/clusters/details/=
+us-east4/dev-restrict-ret-gke/details?inv=3D1&amp;invt=3DAb23Tg&amp;project=
+=3Dedp-dev-restrict-ret-gke" class=3D"external-link" rel=3D"nofollow">dev-r=
+estrict-ret-gke</a></p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/networking/subnetworks/detai=
+ls/us-east4/sn-aa-use4-edp-dev-restrict-ret-gke?project=3Dinsurance-vpc&amp=
+;inv=3D1&amp;invt=3DAb3Zeg" class=3D"external-link" rel=3D"nofollow">sn-aa-=
+use4-edp-dev-restrict-ret-gke</a></p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p>10.112.79.0/25</p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p>100.66.192.0/19</p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p>100.69.200.0/21</p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p>2048</p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p>10.112.79.2</p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p>10.112.79.3</p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p><a href=3D"http://internal-argocd-non-prod.dev-restrict-ret-gke.cvshealt=
+h.com/login?return_url=3Dhttps%3A%2F%2Finternal-argocd-non-prod.dev-restric=
+t-ret-gke.cvshealth.com%2Fapplications" class=3D"external-link" rel=3D"nofo=
+llow">ArgoCD</a></p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p><a href=3D"http://internal-prod.pdev-rst-ret-gke.cvshealth.com" class=3D=
+"external-link" rel=3D"nofollow">AppURL</a></p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p><a href=3D"https://github.com/cvs-health-source-code/cluster-specific/tr=
+ee/master/edp-dev-restrict-ret-gke_dev-restrict-ret-gke" class=3D"external-=
+link" rel=3D"nofollow">edp-dev-restrict-ret-gke_dev-restrict-ret-gke</a></p=
+></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p><a href=3D"https://github.com/cvs-health-source-code/dev_restrict_ret_gk=
+e-gke_manifests" class=3D"external-link" rel=3D"nofollow">dev_restrict_ret_=
+gke-gke_manifests</a></p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p>RET</p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p>NonProd</p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p>UnRestrict</p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/kubernetes/list/overview?inv=
+=3D1&amp;invt=3DAb23Tg&amp;project=3Dedp-dev-ret-gke" class=3D"external-lin=
+k" rel=3D"nofollow">Dev</a></p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/kubernetes/list/overview?inv=
+=3D1&amp;invt=3DAb5vtA&amp;project=3Dedp-dev-ret-gke" class=3D"external-lin=
+k" rel=3D"nofollow">edp-dev-ret-gke</a></p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/kubernetes/clusters/details/=
+us-east4/dev-ret-gke/details?inv=3D1&amp;invt=3DAb23Tg&amp;project=3Dedp-de=
+v-ret-gke" class=3D"external-link" rel=3D"nofollow">dev-ret-gke</a></p></td=
+>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/networking/subnetworks/detai=
+ls/us-east4/sn-aa-use4-edp-dev-ret-gke?project=3Dinsurance-vpc&amp;inv=3D1&=
+amp;invt=3DAb3Zew" class=3D"external-link" rel=3D"nofollow">sn-aa-use4-edp-=
+dev-ret-gke</a></p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p>10.112.96.0/25</p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p>100.67.64.0/19</p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p>100.69.184.0/21</p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p>2048</p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p>10.112.96.2</p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p>10.112.96.3</p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p><a href=3D"http://internal-argocd-non-prod.dev-ret-gke.cvshealth.com/log=
+in?return_url=3Dhttps%3A%2F%2Finternal-argocd-non-prod.dev-ret-gke.cvshealt=
+h.com%2Fapplications" class=3D"external-link" rel=3D"nofollow">ArgoCD</a></=
+p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p><a href=3D"https://cvsdigital.atlassian.net/wiki/spaces/ESSP/pages/44612=
+66709/Shared+composer+metadata+work+sheet" data-linked-resource-id=3D"44612=
+66709" data-linked-resource-version=3D"22" data-linked-resource-type=3D"pag=
+e">AppURL</a></p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p><a href=3D"https://github.com/cvs-health-source-code/cluster-specific/tr=
+ee/master/edp-dev-ret-gke_dev-ret-gke" class=3D"external-link" rel=3D"nofol=
+low">edp-dev-ret-gke_dev-ret-gke</a></p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p><a href=3D"https://github.com/cvs-health-source-code/dev_ret_gke-gke_man=
+ifests" class=3D"external-link" rel=3D"nofollow">dev_ret_gke-gke_manifests<=
+/a></p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p>RET</p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p>NonProd</p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p>Restrict</p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/kubernetes/list/overview?pro=
+ject=3Dedp-qa-restrict-ret-gke" class=3D"external-link" rel=3D"nofollow">QA=
+</a></p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/kubernetes/list/overview?pro=
+ject=3Dedp-qa-restrict-ret-gke" class=3D"external-link" rel=3D"nofollow"><u=
+>edp-qa-restrict-ret-gke</u></a></p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/kubernetes/clusters/details/=
+us-east4/qa-rst-ret-gke/overview?project=3Dedp-qa-restrict-ret-gke" class=
+=3D"external-link" rel=3D"nofollow">qa-rst-ret-gke</a></p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/networking/subnetworks/detai=
+ls/us-east4/sn-aa-use4-edp-qa-restrict-ret-gke?project=3Dinsurance-vpc" cla=
+ss=3D"external-link" rel=3D"nofollow">sn-aa-use4-edp-qa-restrict-ret-gke</a=
+></p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p>10.112.79.128/25</p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p>100.66.224.0/19</p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p>100.69.208.0/21</p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p>2048</p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p>10.112.79.130</p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p>10.112.79.131</p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p><a href=3D"http://internal-argocd-non-prod.qa-rst-ret-gke.cvshealth.com"=
+ class=3D"external-link" rel=3D"nofollow">ArgoCD</a></p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p><a href=3D"http://internal-non-prod.qa-rst-ret-gke.cvshealth.com" class=
+=3D"external-link" rel=3D"nofollow">AppURL</a></p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p><a href=3D"https://github.com/cvs-health-source-code/cluster-specific/tr=
+ee/master/edp-qa-restrict-ret-gke_qa-rst-ret-gke" class=3D"external-link" r=
+el=3D"nofollow">edp-qa-restrict-ret-gke_qa-rst-ret-gke</a></p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p><a href=3D"https://github.com/cvs-health-source-code/qa_rst_ret_gke-gke_=
+manifests" class=3D"external-link" rel=3D"nofollow">qa_rst_ret_gke-gke_mani=
+fests</a></p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p>RET</p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p>NonProd</p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p>UnRestrict</p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/kubernetes/list/overview?inv=
+=3D1&amp;invt=3DAb3ZXw&amp;project=3Dedp-qa-ret-gke" class=3D"external-link=
+" rel=3D"nofollow">QA</a></p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/kubernetes/list/overview?inv=
+=3D1&amp;invt=3DAb3ZXw&amp;project=3Dedp-qa-ret-gke" class=3D"external-link=
+" rel=3D"nofollow">edp-qa-ret-gke</a></p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/kubernetes/clusters/details/=
+us-east4/qa-ret-gke?inv=3D1&amp;invt=3DAb3ZXw&amp;project=3Dedp-qa-ret-gke"=
+ class=3D"external-link" rel=3D"nofollow"><u>qa-ret-gke</u></a></p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/networking/subnetworks/detai=
+ls/us-east4/sn-aa-use4-edp-qa-ret-gke?project=3Dinsurance-vpc&amp;inv=3D1&a=
+mp;invt=3DAb3ZXw" class=3D"external-link" rel=3D"nofollow">sn-aa-use4-edp-q=
+a-ret-gke</a></p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p>10.112.96.128/25</p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p>100.67.96.0/19</p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p>100.66.88.0/21</p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p>2048</p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p>10.112.96.130</p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p>10.112.96.131</p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p><a href=3D"http://internal-argocd-non-prod.qa-ret-gke.cvshealth.com" cla=
+ss=3D"external-link" rel=3D"nofollow">ArgoCD</a></p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p><a href=3D"http://internal-non-prod.qa-ret-gke.cvshealth.com" class=3D"e=
+xternal-link" rel=3D"nofollow">AppURL</a></p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p><a href=3D"https://github.com/cvs-health-source-code/cluster-specific/tr=
+ee/master/edp-qa-ret-gke_qa-ret-gke" class=3D"external-link" rel=3D"nofollo=
+w">edp-qa-ret-gke_qa-ret-gke</a></p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p><a href=3D"https://github.com/cvs-health-source-code/qa_ret_gke-gke_mani=
+fests" class=3D"external-link" rel=3D"nofollow">qa_ret_gke-gke_manifests</a=
+></p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p>RET</p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p>Prod</p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p>Restrict</p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/kubernetes/list/overview?inv=
+=3D1&amp;invt=3DAb23Tg&amp;project=3Dedp-pdev-restrict-ret-gke" class=3D"ex=
+ternal-link" rel=3D"nofollow">PDev</a></p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/kubernetes/list/overview?inv=
+=3D1&amp;invt=3DAb5vtA&amp;project=3Dedp-pdev-restrict-ret-gke" class=3D"ex=
+ternal-link" rel=3D"nofollow">edp-pdev-restrict-ret-gke</a></p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/kubernetes/clusters/details/=
+us-east4/pdev-rst-ret-gke/details?inv=3D1&amp;invt=3DAb23Tg&amp;project=3De=
+dp-pdev-restrict-ret-gke" class=3D"external-link" rel=3D"nofollow">pdev-rst=
+-ret-gke</a></p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/networking/subnetworks/detai=
+ls/us-east4/sn-aa-use4-edp-pdev-restrict-ret-gke?project=3Dinsurance-vpc&am=
+p;inv=3D1&amp;invt=3DAb3Zew" class=3D"external-link" rel=3D"nofollow">sn-aa=
+-use4-edp-pdev-restrict-ret-gke</a></p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p>10.112.97.0/25</p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p>100.67.128.0/19</p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p>100.69.224.0/21</p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p>2048</p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p>10.112.97.3</p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p>10.112.97.4</p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p><a href=3D"http://internal-argocd-prod.pdev-rst-ret-gke.cvshealth.com/lo=
+gin?return_url=3Dhttps%3A%2F%2Finternal-argocd-prod.pdev-rst-ret-gke.cvshea=
+lth.com%2Fapplications" class=3D"external-link" rel=3D"nofollow">ArgoCD</a>=
+</p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p><a href=3D"http://internal-prod.pdev-rst-ret-gke.cvshealth.com" class=3D=
+"external-link" rel=3D"nofollow">AppURL</a></p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p><a href=3D"https://github.com/cvs-health-source-code/cluster-specific/tr=
+ee/master/edp-pdev-restrict-ret-gke_pdev-rst-ret-gke" class=3D"external-lin=
+k" rel=3D"nofollow">edp-pdev-restrict-ret-gke_pdev-rst-ret-gke</a></p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p><a href=3D"https://github.com/cvs-health-source-code/pdev_rst_ret_gke-gk=
+e_manifests" class=3D"external-link" rel=3D"nofollow">pdev_rst_ret_gke-gke_=
+manifests</a></p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p>RET</p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p>Prod</p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p>UnRestrict</p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/kubernetes/list/overview?inv=
+=3D1&amp;invt=3DAb23Tg&amp;project=3Dedp-pdev-ret-gke" class=3D"external-li=
+nk" rel=3D"nofollow">PDev</a></p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/kubernetes/list/overview?inv=
+=3D1&amp;invt=3DAb5vtA&amp;project=3Dedp-pdev-ret-gke" class=3D"external-li=
+nk" rel=3D"nofollow">edp-pdev-ret-gke</a></p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/kubernetes/clusters/details/=
+us-east4/pdev-ret-gke/details?inv=3D1&amp;invt=3DAb23Tg&amp;project=3Dedp-p=
+dev-ret-gke" class=3D"external-link" rel=3D"nofollow">pdev-ret-gke</a></p><=
+/td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/networking/subnetworks/detai=
+ls/us-east4/sn-aa-use4-edp-pdev-ret-gke?project=3Dinsurance-vpc&amp;inv=3D1=
+&amp;invt=3DAb3ZfA" class=3D"external-link" rel=3D"nofollow">sn-aa-use4-edp=
+-pdev-ret-gke</a></p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p>10.112.97.128/25</p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p>100.67.160.0/19</p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p>100.69.192.0/21</p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p>2048</p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p>10.112.97.131</p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p>10.112.97.132</p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p><a href=3D"http://internal-argocd-prod.pdev-ret-gke.cvshealth.com/login?=
+return_url=3Dhttps%3A%2F%2Finternal-argocd-prod.pdev-ret-gke.cvshealth.com%=
+2Fapplications" class=3D"external-link" rel=3D"nofollow">ArgoCD</a></p></td=
+>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p><a href=3D"http://internal-prod.pdev-ret-gke.cvshealth.com" class=3D"ext=
+ernal-link" rel=3D"nofollow">AppURL</a></p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p><a href=3D"https://github.com/cvs-health-source-code/cluster-specific/tr=
+ee/master/edp-pdev-ret-gke_pdev-ret-gke" class=3D"external-link" rel=3D"nof=
+ollow">edp-pdev-ret-gke_pdev-ret-gke</a></p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p><a href=3D"https://github.com/cvs-health-source-code/pdev_ret_gke-gke_ma=
+nifests" class=3D"external-link" rel=3D"nofollow">pdev_ret_gke-gke_manifest=
+s</a></p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p>RET</p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p>Prod</p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p>Restrict</p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/kubernetes/list/overview?inv=
+=3D1&amp;invt=3DAb23Tg&amp;project=3Dedp-prod-restrict-ret-gke" class=3D"ex=
+ternal-link" rel=3D"nofollow">Prod</a></p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/kubernetes/list/overview?inv=
+=3D1&amp;invt=3DAb5vtA&amp;project=3Dedp-prod-restrict-ret-gke" class=3D"ex=
+ternal-link" rel=3D"nofollow">edp-prod-restrict-ret-gke</a></p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/kubernetes/clusters/details/=
+us-east4/prod-rst-ret-gke/details?inv=3D1&amp;invt=3DAb23Tg&amp;project=3De=
+dp-prod-restrict-ret-gke" class=3D"external-link" rel=3D"nofollow">prod-rst=
+-ret-gke</a></p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/networking/subnetworks/detai=
+ls/us-east4/sn-aa-use4-edp-prod-restrict-ret-gke?project=3Dinsurance-vpc&am=
+p;inv=3D1&amp;invt=3DAb3Zew" class=3D"external-link" rel=3D"nofollow">sn-aa=
+-use4-edp-prod-restrict-ret-gke</a></p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p>10.112.98.0/25</p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p>100.67.192.0/19</p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p>100.69.216.0/21</p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p>2048</p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p>10.112.98.3</p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p>10.112.98.4</p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p><a href=3D"http://internal-argocd-prod.prod-rst-ret-gke.cvshealth.com/lo=
+gin?return_url=3Dhttps%3A%2F%2Finternal-argocd-prod.prod-rst-ret-gke.cvshea=
+lth.com%2Fapplications" class=3D"external-link" rel=3D"nofollow">ArgoCD</a>=
+</p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p><a href=3D"http://internal-prod.prod-rst-ret-gke.cvshealth.com" class=3D=
+"external-link" rel=3D"nofollow">AppURL</a></p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p><a href=3D"https://github.com/cvs-health-source-code/cluster-specific/tr=
+ee/master/edp-prod-restrict-ret-gke_prod-rst-ret-gke" class=3D"external-lin=
+k" rel=3D"nofollow">edp-prod-restrict-ret-gke_prod-rst-ret-gke</a></p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p><a href=3D"https://github.com/cvs-health-source-code/prod_rst_ret_gke-gk=
+e_manifests" class=3D"external-link" rel=3D"nofollow">prod_rst_ret_gke-gke_=
+manifests</a></p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p></p></td>
+</tr>
+<tr>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p>RET</p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p>Prod</p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p>UnRestrict</p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/kubernetes/list/overview?inv=
+=3D1&amp;invt=3DAb23Tg&amp;project=3Dedp-prod-ret-gke" class=3D"external-li=
+nk" rel=3D"nofollow">Prod</a></p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/kubernetes/list/overview?inv=
+=3D1&amp;invt=3DAb5vtA&amp;project=3Dedp-prod-ret-gke" class=3D"external-li=
+nk" rel=3D"nofollow">edp-prod-ret-gke</a></p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/kubernetes/clusters/details/=
+us-east4/prod-ret-gke/details?inv=3D1&amp;invt=3DAb23Tg&amp;project=3Dedp-p=
+rod-ret-gke" class=3D"external-link" rel=3D"nofollow">prod-ret-gke</a></p><=
+/td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p><a href=3D"https://console.cloud.google.com/networking/subnetworks/detai=
+ls/us-east4/sn-aa-use4-edp-prod-ret-gke?project=3Dinsurance-vpc&amp;inv=3D1=
+&amp;invt=3DAb3Zew" class=3D"external-link" rel=3D"nofollow">sn-aa-use4-edp=
+-prod-ret-gke</a></p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p>10.112.98.128/25</p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p>100.67.224.0/19</p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p>100.66.176.0/21</p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p>2048</p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p>10.112.98.131</p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p>10.112.98.132</p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p><a href=3D"http://internal-argocd-prod.prod-ret-gke.cvshealth.com/login?=
+return_url=3Dhttps%3A%2F%2Finternal-argocd-prod.prod-ret-gke.cvshealth.com%=
+2Fapplications" class=3D"external-link" rel=3D"nofollow">ArgoCD</a></p></td=
+>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p><a href=3D"http://internal-prod.prod-ret-gke.cvshealth.com" class=3D"ext=
+ernal-link" rel=3D"nofollow">AppURL</a></p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p><a href=3D"https://github.com/cvs-health-source-code/cluster-specific/tr=
+ee/master/edp-prod-ret-gke_prod-ret-gke" class=3D"external-link" rel=3D"nof=
+ollow">edp-prod-ret-gke_prod-ret-gke</a></p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p><a href=3D"https://github.com/cvs-health-source-code/prod_ret_gke-gke_ma=
+nifests" class=3D"external-link" rel=3D"nofollow">prod_ret_gke-gke_manifest=
+s</a></p></td>
+<td data-highlight-colour=3D"#eae6ff" class=3D"confluenceTd">
+<p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p></p>
+    </div>
+</body>
+</html>
+------=_Part_10_1122311559.1761577832744--
